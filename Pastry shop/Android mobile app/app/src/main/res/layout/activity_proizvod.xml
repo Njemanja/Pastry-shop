@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#B7B7B7"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            app:srcCompat="@drawable/header"></ImageView>
+
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#515151" android:textAlignment="center" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:text="Obavestenja "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:onClick="obavestenja"
+                    ></TextView>
+                <TextView android:text="Pocetna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:onClick="index"
+
+                    ></TextView>
+                <TextView android:text="Torte"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:onClick="torte"
+
+                    ></TextView>
+                <TextView android:text="Kolaci"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:onClick="kolaci"
+
+                    ></TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:text="Promocija "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:onClick="promocija"
+
+                    ></TextView>
+                <TextView android:text="Korpa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:onClick="korpa"
+
+                    ></TextView>
+                <TextView android:text="Profil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:onClick="profil"
+
+                    ></TextView>
+                <TextView android:text="Odjava"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:onClick="odjava"
+
+                    ></TextView>
+            </TableRow>
+
+        </TableLayout>
+
+
+        <TextView
+            android:id="@+id/imeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/slikaImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/cenaTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="10px"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/sastojciTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:background="#515151"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/opisTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:background="#515151"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/heart"></ImageView>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Komentari"
+            android:background="#515151"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+
+            android:textColor="@color/white"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/komentariTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#515151"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:padding="8dp"
+            />
+
+
+
+
+        <EditText
+            android:id="@+id/noviKomentarEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Unesite novi komentar"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <Button
+            android:id="@+id/posaljiKomentarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pošalji"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            />
+
+
+
+
+        <Button
+            android:id="@+id/prikaziViseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prikaži više"
+
+
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp" />
+
+
+
+
+
+
+
+
+
+
+        <TableLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#515151" android:textAlignment="center" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:text="Kotakt telefon - 0657896547"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    ></TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:text="Radno vreme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+
+                    android:gravity="center"></TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:text="Radni dan 08-20h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:gravity="center"></TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:text="Subota 11-19h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:gravity="center"></TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:text="Nedelja slobodan dan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:gravity="center"></TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:text="Insagram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:textColor="@color/white"
+                    android:gravity="center"></TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <TextView android:text="Facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:textColor="@color/white"
+                    android:gravity="center"></TextView>
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>

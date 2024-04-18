@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#B7B7B7"
+
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+
+        app:srcCompat="@drawable/header"></ImageView>
+
+    <TableLayout
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+ android:layout_marginTop="300px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TableRow>
+            <TextView android:text="Prijava"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                ></TextView>
+
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Korisnicko ime:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"></TextView>
+            <EditText android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:id="@+id/kor_ime"
+                android:gravity="center"></EditText>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Lozinka:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"></TextView>
+            <EditText android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lozinka"
+                android:inputType="textPassword"
+                android:gravity="center"></EditText>
+        </TableRow>
+        <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prijavite se"
+            android:layout_marginBottom="800px"
+            android:onClick="prijava"
+
+            ></Button>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#515151" android:textAlignment="center" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="Kotakt telefon - 0657896547"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                ></TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="Radno vreme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+
+                android:gravity="center"></TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="Radni dan 08-20h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:gravity="center"></TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="Subota 11-19h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:gravity="center"></TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="Nedelja slobodan dan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:gravity="center"></TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="Insagram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:textColor="@color/white"
+                android:gravity="center"></TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <TextView android:text="Facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:textColor="@color/white"
+                android:gravity="center"></TextView>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

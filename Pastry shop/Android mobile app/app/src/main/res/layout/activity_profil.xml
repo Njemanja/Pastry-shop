@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="#B7B7B7"
+
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+
+            app:srcCompat="@drawable/header"></ImageView>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#515151" android:textAlignment="center" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView android:text="Pocetna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:onClick="index"
+
+                    ></TextView>
+                <TextView android:text="Odjava"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:onClick="odjava"
+
+                    ></TextView>
+
+            </TableRow>
+
+        </TableLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Korisnicko ime"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center">
+
+        </TextView>
+        <EditText
+            android:id="@+id/korimeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Korisnicko ime"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ime"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center">
+
+        </TextView>
+        <EditText
+            android:id="@+id/imeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ime"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Prezime"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/prezimeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prezime"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Email"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Adresa"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/adresaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Adresa"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Telefon"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/telefonEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefon"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Lozinka"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/lozinkaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lozinka"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Lozinka"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/lozinkaEditText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lozinka1"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Izmeni"
+            android:layout_marginBottom="10dp"
+            android:onClick="saveUserData"
+            android:layout_gravity="center"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#515151" android:textAlignment="center" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:text="Kotakt telefon - 0657896547"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    ></TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:text="Radno vreme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+
+                    android:gravity="center"></TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:text="Radni dan 08-20h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:gravity="center"></TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:text="Subota 11-19h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:gravity="center"></TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:text="Nedelja slobodan dan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:gravity="center"></TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:text="Insagram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:textColor="@color/white"
+                    android:gravity="center"></TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <TextView android:text="Facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autoLink="web"
+                    android:linksClickable="true"
+                    android:textColor="@color/white"
+                    android:gravity="center"></TextView>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>
